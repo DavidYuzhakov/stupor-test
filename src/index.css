@@ -1,0 +1,45 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  border: 1px solid #000;
+}
+
+.custom-marker {
+  width: 20px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.custom-marker.basic {
+  background-color: #3498db;
+  border-radius: 50%;
+}
+
+.custom-marker.advanced {
+  background-color: rgb(255, 89, 89);
+}
+
+.custom-marker.special {
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 20px solid #9b59b6;
+  background: none;
+}
+
+.custom-marker.special.small {
+  border-right-width: 7.5px;
+  border-left-width: 7.5px;
+  border-bottom-width: 15px;
+}
